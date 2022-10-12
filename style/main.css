@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.wrapper{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box{
+    position: relative;
+}
+
+.input{
+    width: 250px;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 1);
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    caret-color: rgba(255, 255, 255, 0.6);
+}
+
+.text{
+    position: absolute;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    top: 15px;
+    left: 25px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.submit{
+    background: rgba(226, 104, 104, 0.8);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    width: 250px;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+input:valid ~ span,
+input:focus ~ span{
+    display: none;
+}
+
+.popup{
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(216, 217, 207, 0.3);
+    color: rgba(255, 255, 255, 1);
+    padding: 60px 30px;
+    border-radius: 10px;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+}
+
+.popup-text{
+    margin-bottom: 25px;
+}
+
+.popup-button{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.popup-button button{
+    background: rgba(226, 104, 104, 0.8);
+    color: rgba(255, 255, 255, 1);
+    padding: 5px 10px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#popup{
+    display: none;
+}
+
+.message{
+    color: white;
+    font-size: 36px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message img{
+    width: 400px;
+    margin-top: 30px;
+}
+
+#message{
+    display: none;
+}
